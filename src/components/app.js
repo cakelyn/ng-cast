@@ -1,6 +1,12 @@
 angular.module('video-player')
 
   .component('app', {
+
+    controller: function() {
+      var data = window.exampleVideoData;
+      console.log(data);
+    },
+
     template: `
       <div>
         <nav class="navbar">
@@ -13,7 +19,7 @@ angular.module('video-player')
             <video-player></video-player>
           </div>
           <div class="col-md-5">
-            <video-list></video-list>
+            <video-list data="data"></video-list>
           </div>
         </div>
       </div>
