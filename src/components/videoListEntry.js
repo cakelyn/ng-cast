@@ -7,4 +7,5 @@ angular.module('video-player')
     },
 
     templateUrl: 'src/templates/videoListEntry.html'
+
   });
