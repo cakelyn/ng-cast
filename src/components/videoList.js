@@ -2,11 +2,12 @@ angular.module('video-player')
 
   .component('videoList', {
     bindings: {
-      data: '<'
+      videos: '<',
+      selectVideo: '<'
     },
 
     controller: function() {
-      console.log('Video List: ', this);
+      console.log(this);
     },
 
     templateUrl: 'src/templates/videoList.html'
