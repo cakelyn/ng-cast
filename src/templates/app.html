@@ -9,7 +9,8 @@
       <video-player video="$ctrl.currentVideo"></video-player>
     </div>
     <div class="col-md-5">
-      <video-list videos="$ctrl.videos" selectVideo="$ctrl.selectVideo"></video-list>
+      <video-list videos="$ctrl.videos" on-click="$ctrl.selectVideo"></video-list>
+      <div>{{$ctrl.selectVideo}}</div>
     </div>
   <div>
 </div>

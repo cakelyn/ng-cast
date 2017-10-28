@@ -3,11 +3,12 @@ angular.module('video-player')
   .component('videoList', {
     bindings: {
       videos: '<',
-      selectVideo: '<'
+      currentVideo: '<',
+      onClick: '='
     },
 
     controller: function() {
-      console.log(this);
+      console.log('Video List: ', this.onClick);
     },
 
     templateUrl: 'src/templates/videoList.html'

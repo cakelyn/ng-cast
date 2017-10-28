@@ -8,8 +8,12 @@ angular.module('video-player')
       this.currentVideo = this.videos[0];
 
       this.selectVideo = function(video) {
+        let videoPassedBack = JSON.stringify(video, null, '\t');
         console.log('this works');
         this.currentVideo = video;
+        let currentVideoNow = JSON.stringify(this.currentVideo, null, '\t');
+        console.log('Equality Check: ' + _.isEqual(videoPassedBack, currentVideoNow));
+
       };
 
       this.searchResults = function() {
